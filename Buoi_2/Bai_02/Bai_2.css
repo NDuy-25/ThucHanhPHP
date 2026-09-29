@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    padding-top: 50px;
+}
+
+/* Khung form màu vàng nhạt */
+.form-container {
+    width: 360px;
+    margin: 0 auto;
+    background-color: #fff8d6;
+    border: 1px solid #e0d080;
+    padding: 10px 15px 15px 15px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+}
+
+/* Tiêu đề tiêu chuẩn màu da cam/vàng */
+.form-title {
+    background-color: #ffd875;
+    color: #d94b00;
+    font-family: 'Comic Sans MS', 'Segoe UI', cursive, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    padding: 8px 0;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    padding: 4px 6px;
+}
+
+.label-col {
+    width: 30%;
+    color: #333;
+    font-size: 14px;
+}
+
+.input-col input[type="text"] {
+    width: 90%;
+    padding: 3px 5px;
+    border: 1px solid #ccc;
+}
+
+/* Ô Diện tích và Chu vi không cho sửa (readonly) có nền màu hồng */
+.readonly-input {
+    background-color: #ffd6db !important;
+    color: #a00;
+    font-weight: bold;
+}
+
+.btn-submit {
+    padding: 3px 12px;
+    cursor: pointer;
+    margin-top: 5px;
+}
