@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    padding-top: 50px;
+}
+
+.form-container {
+    width: 380px;
+    margin: 0 auto;
+    background-color: #00a8a8;
+    border: 1px solid #008080;
+    padding: 10px 15px 15px 15px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+}
+
+.form-title {
+    background-color: #007373;
+    color: #ffffff;
+    font-family: 'Comic Sans MS', 'Segoe UI', cursive, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    padding: 8px 0;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    padding: 5px 6px;
+}
+
+.label-col {
+    width: 35%;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.input-col input[type="text"] {
+    width: 70%;
+    padding: 3px 5px;
+    border: 1px solid #ccc;
+}
+
+.unit {
+    color: #ffd875;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* Ô tiền thanh toán bị khóa (readonly) màu nền vàng nhạt */
+.readonly-input {
+    background-color: #fff8cb !important;
+    color: #333;
+    font-weight: bold;
+}
+
+.btn-submit {
+    padding: 3px 12px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.error-message {
+    color: #ffeb3b;
+    font-size: 13px;
+    text-align: center;
+    margin-top: 8px;
+    font-weight: bold;
+}

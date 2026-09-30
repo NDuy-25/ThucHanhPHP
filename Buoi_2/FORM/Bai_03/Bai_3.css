@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    padding-top: 50px;
+}
+
+/* Khung Form màu vàng nhạt */
+.form-container {
+    width: 420px;
+    margin: 0 auto;
+    background-color: #fff8d6;
+    border: 1px solid #e0d080;
+    padding: 10px 15px 15px 15px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+}
+
+/* Tiêu đề Form màu vàng/cam */
+.form-title {
+    background-color: #ffd875;
+    color: #d94b00;
+    font-family: 'Comic Sans MS', 'Segoe UI', cursive, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    padding: 8px 0;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    padding: 4px 6px;
+}
+
+.label-col {
+    width: 35%;
+    color: #333;
+    font-size: 14px;
+}
+
+.input-col input[type="text"] {
+    width: 70%;
+    padding: 3px 5px;
+    border: 1px solid #ccc;
+}
+
+/* Đơn vị tính (Kw, VNĐ) màu cam nhạt */
+.unit {
+    color: #d94b00;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* Textfield Số tiền thanh toán bị khóa và tô màu hồng */
+.readonly-input {
+    background-color: #ffd6db !important;
+    color: #a00;
+    font-weight: bold;
+}
+
+.btn-submit {
+    padding: 3px 12px;
+    cursor: pointer;
+    margin-top: 5px;
+}

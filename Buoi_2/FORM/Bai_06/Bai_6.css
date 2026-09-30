@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    padding-top: 30px;
+}
+
+.container {
+    width: 400px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    padding: 15px 20px;
+}
+
+.title {
+    color: #2b5797;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.label-col {
+    color: #2b5797;
+    font-weight: bold;
+    width: 120px;
+}
+
+.phep-tinh-label {
+    color: #c0392b;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 90%;
+    padding: 3px;
+    color: #c0392b; /* Màu chữ màu đỏ/cam */
+}
+
+.back-link {
+    color: #8e44ad;
+    font-style: italic;
+    font-weight: bold;
+}

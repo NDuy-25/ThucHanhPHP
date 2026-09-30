@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Enter Your Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        fieldset {
+            width: 500px;
+            border: 1px solid #999;
+            padding: 15px;
+        }
+        legend {
+            font-weight: bold;
+        }
+        table td {
+            padding: 5px;
+            vertical-align: top;
+        }
+        .label-col {
+            width: 100px;
+        }
+        input[type="text"], select, textarea {
+            width: 250px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- action="config.php" chuyển dữ liệu sang trang config.php khi bấm Gửi -->
+    <form action="config.php" method="POST">
+        <fieldset>
+            <legend>Enter Your Information</legend>
+            <table>
+                <tr>
+                    <td class="label-col">Fullname</td>
+                    <td><input type="text" name="fullname"></td>
+                </tr>
+                <tr>
+                    <td class="label-col">Address</td>
+                    <td><input type="text" name="address"></td>
+                </tr>
+                <tr>
+                    <td class="label-col">Phone</td>
+                    <td><input type="text" name="phone"></td>
+                </tr>
+                <tr>
+                    <td class="label-col">Gender</td>
+                    <td>
+                        <input type="radio" name="gender" value="Nam" checked> Nam
+                        <input type="radio" name="gender" value="Nữ"> Nữ
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label-col">Country</td>
+                    <td>
+                        <select name="country">
+                            <option value="Việt Nam">Việt Nam</option>
+                            <option value="Mỹ">Mỹ</option>
+                            <option value="Nhật Bản">Nhật Bản</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label-col">Study</td>
+                    <td>
+                        <!-- Dùng study[] để nhận nhiều giá trị dạng mảng -->
+                        <input type="checkbox" name="study[]" value="PHP & MySQL"> PHP & MySQL
+                        <input type="checkbox" name="study[]" value="ASP.NET"> ASP.NET <br>
+                        <input type="checkbox" name="study[]" value="CCNA"> CCNA
+                        <input type="checkbox" name="study[]" value="Security+"> Security+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label-col">Note</td>
+                    <td>
+                        <textarea name="note" rows="4"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <!-- Nút Gửi để gửi dữ liệu -->
+                        <input type="submit" value="Gửi">
+                        <!-- Nút Hủy (type="reset") tự động xóa sạch các ô đã nhập -->
+                        <input type="reset" value="Hủy">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+
+</body>
+</html>
