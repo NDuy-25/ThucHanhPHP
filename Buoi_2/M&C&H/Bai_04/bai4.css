@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.form-box {
+    width: 450px;
+    margin: 30px auto;
+    background-color: #d0ece7; /* Nền xanh nhạt */
+    border: 1px solid #117864;
+    padding: 10px 15px;
+}
+
+.title {
+    background-color: #117864; /* Tiêu đề màu xanh ngọc */
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    padding: 8px;
+    margin: -10px -15px 15px -15px;
+    font-size: 16px;
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    padding: 5px;
+}
+
+input[type="text"] {
+    width: 90%;
+    padding: 3px;
+}
+
+/* Nút Tìm kiếm màu xanh nhạt */
+.btn-submit {
+    background-color: #a3e4d7;
+    border: 1px solid #76d7c4;
+    padding: 4px 15px;
+    cursor: pointer;
+}
+
+/* Ô Mảng và Kết quả màu trắng viền nhạt, chữ đỏ */
+.result-input {
+    background-color: #ffffff;
+    color: #c0392b;
+    font-weight: bold;
+}
+
+.note {
+    color: red;
+    font-size: 13px;
+}

@@ -18,10 +18,8 @@
 
         if (isset($_POST['tinh'])) {
             if (is_numeric($ban_kinh) && $ban_kinh > 0) {
-                // Công thức: Diện tích = PI * (Bán kính)^2
                 $dien_tich = PI * pow($ban_kinh, 2);
 
-                // Công thức: Chu vi = 2 * PI * Bán kính
                 $chu_vi = 2 * PI * $ban_kinh;
             }
         }

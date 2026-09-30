@@ -9,7 +9,6 @@
 <body>
 
     <?php
-        // 1. Lấy dữ liệu điểm gửi từ Form (nếu có)
         $toan = isset($_POST['toan']) ? $_POST['toan'] : "";
         $ly = isset($_POST['ly']) ? $_POST['ly'] : "";
         $hoa = isset($_POST['hoa']) ? $_POST['hoa'] : "";
@@ -63,14 +62,13 @@
                 <tr>
                     <td class="label-col">Tổng điểm:</td>
                     <td class="input-col">
-                        <!-- Thuộc tính readonly không cho phép chỉnh sửa -->
+
                         <input type="text" name="tong_diem" class="readonly-input" value="<?php echo htmlspecialchars($tong_diem); ?>" readonly>
                     </td>
                 </tr>
                 <tr>
                     <td class="label-col">Kết quả thi:</td>
                     <td class="input-col">
-                        <!-- Thuộc tính readonly không cho phép chỉnh sửa -->
                         <input type="text" name="ket_qua" class="readonly-input" value="<?php echo htmlspecialchars($ket_qua); ?>" readonly>
                     </td>
                 </tr>

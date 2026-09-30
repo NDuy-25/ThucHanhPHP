@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.form-box {
+    width: 450px;
+    margin: 30px auto;
+    background-color: #fff0f5; 
+    border: 1px solid #c2185b;
+    padding: 10px 15px;
+}
+
+.title {
+    background-color: #a21b6a; 
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    padding: 8px;
+    margin: -10px -15px 15px -15px;
+    font-size: 16px;
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    padding: 5px;
+}
+
+input[type="text"] {
+    width: 90%;
+    padding: 3px;
+}
+
+/* Nút bấm màu vàng nhạt */
+.btn-submit {
+    background-color: #fff9c4;
+    border: 1px solid #ccc;
+    padding: 4px 10px;
+    cursor: pointer;
+}
+
+.result-input {
+    background-color: #ffcdd2;
+    color: #b71c1c;
+    font-weight: bold;
+}
+
+.note {
+    color: red;
+    font-size: 13px;
+}

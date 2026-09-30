@@ -47,7 +47,6 @@
     }
     ?>
 
-    <!-- Form HTML hiển thị -->
     <div class="form-container">
         <form name="form_karaoke" action="" method="POST">
             <div class="form-title">TÍNH TIỀN KARAOKE</div>

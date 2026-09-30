@@ -59,7 +59,6 @@
                 <tr>
                     <td class="label-col">Số tiền thanh toán:</td>
                     <td class="input-col">
-                        <!-- Ô này bị khóa (readonly) và tô nền màu hồng -->
                         <input type="text" name="so_tien_thanh_toan" class="readonly-input" value="<?php echo htmlspecialchars($so_tien_thanh_toan); ?>" readonly>
                         <span class="unit">(VNĐ)</span>
                     </td>

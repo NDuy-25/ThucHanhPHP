@@ -60,7 +60,6 @@
         </tr>
         <tr>
             <td colspan="2" style="text-align: center; padding-top: 10px;">
-                <!-- Đường link quay lại trang trước bằng Javascript theo hướng dẫn -->
                 <a href="javascript:window.history.back(-1);" class="back-link">Quay lại trang trước</a>
             </td>
         </tr>

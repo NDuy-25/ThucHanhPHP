@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.form-box {
+    width: 420px;
+    margin: 30px auto;
+    background-color: #ccd9b8;
+    border: 1px solid #2e75b6;
+    padding: 10px 15px;
+}
+
+.title {
+    background-color: #008080;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    padding: 8px;
+    margin: -10px -15px 15px -15px;
+    font-size: 16px;
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    padding: 4px;
+}
+
+input[type="text"] {
+    width: 90%;
+    padding: 2px 4px;
+}
+
+.btn-submit {
+    background-color: #fff2cc;
+    border: 1px solid #888;
+    padding: 3px 10px;
+    cursor: pointer;
+}
+
+.result-input {
+    background-color: #c5e0b4;
+    color: red;
+    font-weight: bold;
+}
+
+.note {
+    color: red;
+    font-size: 13px;
+}
+
+.back-link {
+    color: blue;
+    font-style: italic;
+}
