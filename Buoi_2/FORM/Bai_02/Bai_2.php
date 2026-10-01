@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diện tích và Chu vi Hình Tròn</title>
-    <!-- Nhúng file CSS -->
     <link rel="stylesheet" href="Bai_2.css">
 </head>
 <body>
@@ -17,10 +16,21 @@
         $chu_vi = "";
 
         if (isset($_POST['tinh'])) {
-            if (is_numeric($ban_kinh) && $ban_kinh > 0) {
-                $dien_tich = PI * pow($ban_kinh, 2);
+            // 1. Kiểm tra dữ liệu nhập vào phải là số
+            if (is_numeric($ban_kinh)) {
+                
+                // 2. Kiểm tra bán kính phải lớn hơn 0
+                if ($ban_kinh > 0) {
+                    $dien_tich = PI * pow($ban_kinh, 2);
+                    $chu_vi = 2 * PI * $ban_kinh;
+                } else {
+                    $dien_tich = "Bán kính phải lớn hơn 0!";
+                    $chu_vi = "Bán kính phải lớn hơn 0!";
+                }
 
-                $chu_vi = 2 * PI * $ban_kinh;
+            } else {
+                $dien_tich = "Vui lòng nhập số hợp lệ!";
+                $chu_vi = "Vui lòng nhập số hợp lệ!";
             }
         }
     ?>
@@ -33,19 +43,19 @@
                 <tr>
                     <td class="label-col">Bán kính:</td>
                     <td class="input-col">
-                        <input type="text" name="ban_kinh" value="<?php echo $ban_kinh; ?>" required>
+                        <input type="text" name="ban_kinh" value="<?php echo htmlspecialchars($ban_kinh); ?>" required>
                     </td>
                 </tr>
                 <tr>
                     <td class="label-col">Diện tích:</td>
                     <td class="input-col">
-                        <input type="text" name="dien_tich" class="readonly-input" value="<?php echo $dien_tich; ?>" readonly>
+                        <input type="text" name="dien_tich" class="readonly-input" value="<?php echo htmlspecialchars($dien_tich); ?>" readonly>
                     </td>
                 </tr>
                 <tr>
                     <td class="label-col">Chu vi:</td>
                     <td class="input-col">
-                        <input type="text" name="chu_vi" class="readonly-input" value="<?php echo $chu_vi; ?>" readonly>
+                        <input type="text" name="chu_vi" class="readonly-input" value="<?php echo htmlspecialchars($chu_vi); ?>" readonly>
                     </td>
                 </tr>
                 <tr>

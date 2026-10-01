@@ -33,7 +33,6 @@
     $sum_am = 0;
     $pos_zero = array();
 
-    // Duyệt mảng thực hiện các yêu cầu c, d, e, f
     foreach ($arr as $index => $val) {
         // c. Đếm số chẵn
         if ($val % 2 == 0) {

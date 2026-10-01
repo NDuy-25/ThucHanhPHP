@@ -18,7 +18,7 @@
         return $mang;
     }
 
-    // 2. Hàm xuất mảng ra chuỗi (ngăn cách bằng dấu cách)
+    // 2. Hàm xuất mảng ra chuỗi 
     function xuat_mang($mang) {
         return implode(" ", $mang);
     }
@@ -61,7 +61,6 @@
     $tong = "";
 
     if (isset($_POST['phat_sinh']) && is_numeric($n) && $n > 0) {
-        // Gọi 5 hàm đã xây dựng
         $Smang   = tao_mang($n);
         $mang_kq = xuat_mang($Smang);
         $max     = tim_max($Smang);

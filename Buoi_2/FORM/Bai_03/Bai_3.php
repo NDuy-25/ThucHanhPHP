@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,7 +19,21 @@
 
         if (isset($_POST['tinh'])) {
             if (is_numeric($chi_so_cu) && is_numeric($chi_so_moi) && is_numeric($don_gia)) {
-                $so_tien_thanh_toan = ($chi_so_moi - $chi_so_cu) * $don_gia;
+                
+                if ($chi_so_cu >= 0 && $chi_so_moi >= 0 && $don_gia >= 0) {
+                    
+                    if ($chi_so_moi >= $chi_so_cu) {
+                        $so_tien_thanh_toan = ($chi_so_moi - $chi_so_cu) * $don_gia;
+                    } else {
+                        $so_tien_thanh_toan = "Chỉ số mới phải >= chỉ số cũ!";
+                    }
+
+                } else {
+                    $so_tien_thanh_toan = "Không được nhập số âm!";
+                }
+
+            } else {
+                $so_tien_thanh_toan = "Vui lòng nhập số!";
             }
         }
     ?>

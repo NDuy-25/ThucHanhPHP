@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,14 +18,24 @@
         $ket_qua = "";
 
         if (isset($_POST['xem_ket_qua'])) {
+            // 1. Kiểm tra tất cả dữ liệu nhập vào phải là số
             if (is_numeric($toan) && is_numeric($ly) && is_numeric($hoa) && is_numeric($diem_chuan)) {
-                $tong_diem = $toan + $ly + $hoa;
+                
+                // 2. Kiểm tra không được nhập số âm (điểm phải >= 0)
+                if ($toan >= 0 && $ly >= 0 && $hoa >= 0 && $diem_chuan >= 0) {
+                    $tong_diem = $toan + $ly + $hoa;
 
-                if ($toan > 0 && $ly > 0 && $hoa > 0 && $tong_diem >= $diem_chuan) {
-                    $ket_qua = "Đậu";
+                    // Điều kiện đậu: Không bị điểm liệt (> 0) và Tổng điểm >= Điểm chuẩn
+                    if ($toan > 0 && $ly > 0 && $hoa > 0 && $tong_diem >= $diem_chuan) {
+                        $ket_qua = "Đậu";
+                    } else {
+                        $ket_qua = "Rớt";
+                    }
                 } else {
-                    $ket_qua = "Rớt";
+                    $ket_qua = "Điểm không được là số âm!";
                 }
+            } else {
+                $ket_qua = "Vui lòng nhập số!";
             }
         }
     ?>
@@ -62,7 +72,6 @@
                 <tr>
                     <td class="label-col">Tổng điểm:</td>
                     <td class="input-col">
-
                         <input type="text" name="tong_diem" class="readonly-input" value="<?php echo htmlspecialchars($tong_diem); ?>" readonly>
                     </td>
                 </tr>
